@@ -1,5 +1,3 @@
-> This is currently an idea
-
 ### Info
  - callback (cb) is called with error parameter and additional parameters if specified
  - If no return value is specified the function requires a callback
@@ -27,14 +25,15 @@
 
 ### server.users
  - TODO **getDB(id[,cb])** - Returns the user by its database id (no callback) or a user object (with callback)
+ - TODO **getID(id[,cb])** - Returns the user by ID (no callback) or a user object (with callback)
  - **users** - all users online
 
 ### server.channels
- - TODO **getID(id[,cb])**
+ - TODO **getID(id[,cb])** - Returns the channel by ID (no callback) or a channel object (with callback)
  - **channels** - all channels
 
 ### server.groups
- - TODO **getID(id[,cb])**
+ - TODO **getID(id[,cb])** - Returns the channel by ID (no callback) or a channel object (with callback)
  - **groups** - all groups
 
 ### user
