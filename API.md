@@ -20,7 +20,7 @@
 
 ### server
 - **users** - users object
-- **channels** - channel object
+- **channels** - channels object
 - **groups** - groups object
 
 ### server.users
@@ -41,7 +41,15 @@
  - TODO **kick([reason,]cb)** - Kicks the User
  - TODO **ban(time[,reason],cb)** - Bans the User
 
+### channel
+ - TODO **rename(name,cb)** - Renames the channel
+ - TODO **delete(cb)** - Deletes the channel
+ - TODO **move(pos,cb)** - Moves the channel
+
 ### group
+ - TODO **rename(name,cb)** - Renames the group
+ - TODO **delete(cb)** - Deletes the group
+ - TODO **copy(dst,cb)** - Copies the group
  - TODO **perms** - Permissions of the Group (perm object)
 
 ### perm
