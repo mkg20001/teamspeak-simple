@@ -1,6 +1,6 @@
 {
   "name": "teamspeak-simple",
-  "version": "0.0.1",
+  "version": "0.0.2-r1",
   "description": "Simple Teamspeak Query for NodeJS",
   "main": "index.js",
   "scripts": {
