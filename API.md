@@ -10,11 +10,12 @@
  - **refresh(cb)** - Refresh values of object
 
 ### client.servers
- - TODO **start(sid,cb)** - Start SID if not running
- - TODO **stop(sid,cb)** - Stop SID if running
- - TODO **state(sid[,state])** - Returns state of SID or Boolean
- - TODO **create(name[,properties],cb)** - Create Server (Server Object is passed to callback)
- - TODO **delete(sid,cb)** - Deletes a Server
+ - **start(sid,cb)** - Start SID if not running
+ - **stop(sid,cb)** - Stop SID if running
+ - **restart(sid,cb)** - Restart SID
+ - **state(sid[,state])** - Returns state of SID or Boolean
+ - **create(name[,properties],cb)** - Create Server (Server Object is passed to callback)
+ - **delete(sid,cb)** - Deletes a Server
  - **get(sid[,cb])** - Returns the server by SID (no callback) or a server object (with callback)
  - **servers** - Servers list
 

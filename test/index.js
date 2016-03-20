@@ -11,7 +11,10 @@ describe("teamspeak-simple",function() {
   describe("servers",function() {
     var s;
     it("create(name,cb)",function(done) {
-      sq.servers.create("Test",done);
+      sq.servers.create("Test",function(err,serv,resp) {
+        config.server=resp.sid;
+        done(err);
+      });
     });
     it("servers",function() {
       if (!sq.servers.servers) throw "Property Missing";
@@ -25,11 +28,11 @@ describe("teamspeak-simple",function() {
     it("start(sid,cb)",function(done) {
       sq.servers.start(config.server,done);
     });
+    it("restart(sid,cb)",function(done) {
+      sq.servers.restart(config.server,done);
+    });
     it("state(sid,state)",function() {
       if (!sq.servers.state(config.server)) throw "Fail";
-    });
-    it("delete(sid,cb)",function(done) {
-      sq.servers.delete(config.server,done);
     });
     it("getId(id)", function() {
       if (!sq.servers.getId(config.server)) throw "Fail";
@@ -87,6 +90,11 @@ describe("teamspeak-simple",function() {
           s.groups.getId(s.groups.groups[0].uid,function(e,r) {
             done(e);
           });
+        });
+      });
+      describe("server.delete", function() {
+        it("delete(sid,cb)",function(done) {
+          sq.servers.delete(config.server,done);
         });
       });
     });
