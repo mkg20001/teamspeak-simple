@@ -6,39 +6,45 @@
 
 ### client
  - **send(command,arguments,callback)** - Send Commands http://media.teamspeak.com/ts3_literature/TeamSpeak%203%20Server%20Query%20Manual.pdf
+ - **servers** - servers object
 
 ### Basic properties (in every Object expect client)
  - **refresh(cb)** - Refresh values of object
 
 ### client.servers
- - **start(sid,cb)** - Start SID if not running
- - **stop(sid,cb)** - Stop SID if running
- - **state(sid[,state],cb)** - Returns state of SID or Boolean
- - **create(name[,properties],cb)** - Create Server (Server Object is passed to callback)
- - **delete(sid,cb)** - Deletes a Server
+ - TODO **start(sid,cb)** - Start SID if not running
+ - TODO **stop(sid,cb)** - Stop SID if running
+ - TODO **state(sid[,state],cb)** - Returns state of SID or Boolean
+ - TODO **create(name[,properties],cb)** - Create Server (Server Object is passed to callback)
+ - TODO **delete(sid,cb)** - Deletes a Server
  - **get(sid[,cb])** - Returns the server by SID (no callback) or a server object (with callback)
  - **servers** - Servers list
 
 ### server
-- **users** - all users online
-- **channels** - all channels
-- **groups** - all groups
+- **users** - users object
+- **channels** - channel object
+- **groups** - groups object
 
 ### server.users
- - **getDB(id[,cb])** - Returns the user by its database id (no callback) or a user object (with callback)
- - **users** - all users
+ - TODO **getDB(id[,cb])** - Returns the user by its database id (no callback) or a user object (with callback)
+ - **users** - all users online
 
 ### server.channels
- - **getID(id[,cb])**
+ - TODO **getID(id[,cb])**
+ - **channels** - all channels
+
+### server.groups
+ - TODO **getID(id[,cb])**
+ - **groups** - all groups
 
 ### user
- - **move(channel,cb)** - Moves the user to the specified channel (can be channel object or channel id)
- - **kick([reason,]cb)** - Kicks the User
- - **ban(time[,reason],cb)** - Bans the User
+ - TODO **move(channel,cb)** - Moves the user to the specified channel (can be channel object or channel id)
+ - TODO **kick([reason,]cb)** - Kicks the User
+ - TODO **ban(time[,reason],cb)** - Bans the User
 
 ### group
- - **perms** - Permissions of the Group (perm object)
+ - TODO **perms** - Permissions of the Group (perm object)
 
 ### perm
- - **set(perm[,val,cb])** - Set Permission or revoke it by setting it to null (If no value is specified current value is returned)
- - **perms** - all permissions
+ - TODO **set(perm[,val,cb])** - Set Permission or revoke it by setting it to null (If no value is specified current value is returned)
+ - TODO **perms** - all permissions
