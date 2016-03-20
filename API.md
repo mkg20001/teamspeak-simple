@@ -9,7 +9,6 @@
 
 ### Basic properties (in every Object expect client)
  - **refresh(cb)** - Refresh values of object
- - **list** - The response of the \*list command
 
 ### client.servers
  - **start(sid,cb)** - Start SID if not running
@@ -18,6 +17,12 @@
  - **create(name[,properties],cb)** - Create Server (Server Object is passed to callback)
  - **delete(sid)** - Deletes a Server
  - **get(sid)** - Server object is passed to callback
+ - **servers** - Servers list
+
+### server
+- **users** - all users online
+- **channels** - all channels
+- **groups** - all groups
 
 ### server.users
  - **getDB(id)** - Returns the user by its database id (no callback)
@@ -29,5 +34,6 @@
 
 ### group
 > WIP
+
 ### permission
 > WIP
