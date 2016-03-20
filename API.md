@@ -12,7 +12,7 @@
 ### client.servers
  - TODO **start(sid,cb)** - Start SID if not running
  - TODO **stop(sid,cb)** - Stop SID if running
- - TODO **state(sid[,state],cb)** - Returns state of SID or Boolean
+ - TODO **state(sid[,state])** - Returns state of SID or Boolean
  - TODO **create(name[,properties],cb)** - Create Server (Server Object is passed to callback)
  - TODO **delete(sid,cb)** - Deletes a Server
  - **get(sid[,cb])** - Returns the server by SID (no callback) or a server object (with callback)
