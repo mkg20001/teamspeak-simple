@@ -25,8 +25,8 @@ describe("teamspeak-simple",function() {
     it("start(sid,cb)",function(done) {
       sq.servers.start(config.server,done);
     });
-    it("state(sid,cb)",function(done) {
-      sq.servers.state(config.server,done);
+    it("state(sid,state)",function() {
+      if (!sq.servers.state(config.server)) throw "Fail";
     });
     it("delete(sid,cb)",function(done) {
       sq.servers.delete(config.server,done);
@@ -49,10 +49,10 @@ describe("teamspeak-simple",function() {
           if (!s.users.usersbyId) throw "Property Missing";
         });
         it("getId(id)", function() {
-          if (!s.users.getId(s.users.users[0].uid)) throw "Fail";
+          if (!s.users.getId(s.users.users[0].clid)) throw "Fail";
         });
         it("getId(id,cb)", function(done) {
-          s.users.getId(s.users.users[0].uid,function(e,r) {
+          s.users.getId(s.users.users[0].clid,function(e,r) {
             done(e);
           });
         });
@@ -65,7 +65,7 @@ describe("teamspeak-simple",function() {
           if (!s.channels.channelsbyId) throw "Property Missing";
         });
         it("getId(id)", function() {
-          if (!s.channels.getId(s.channels.channels[0].uid)) throw "Fail";
+          if (!s.channels.getId(s.channels.channels[0].cid)) throw "Fail";
         });
         it("getId(id,cb)", function(done) {
           s.channels.getId(s.channels.channels[0].uid,function(e,r) {
@@ -81,7 +81,7 @@ describe("teamspeak-simple",function() {
           if (!s.groups.groupsbyId) throw "Property Missing";
         });
         it("getId(id)", function() {
-          if (!s.groups.getId(s.groups.groups[0].uid)) throw "Fail";
+          if (!s.groups.getId(s.groups.groups[0].sgid)) throw "Fail";
         });
         it("getId(id,cb)", function(done) {
           s.groups.getId(s.groups.groups[0].uid,function(e,r) {
