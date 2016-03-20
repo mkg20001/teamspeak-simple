@@ -23,6 +23,7 @@
 - **users** - users object
 - **channels** - channels object
 - **groups** - groups object
+
 > TO ADD: Tokens, Ban List, Complain List, Message List
 
 ### server.users
@@ -42,12 +43,14 @@
  - TODO **move(channel,cb)** - Moves the user to the specified channel (can be channel object or channel id)
  - TODO **kick([reason,]cb)** - Kicks the User
  - TODO **ban(time[,reason],cb)** - Bans the User
+
 > TO ADD: Poke,
 
 ### channel
  - TODO **rename(name,cb)** - Renames the channel
  - TODO **delete(cb)** - Deletes the channel
  - TODO **move(pos,cb)** - Moves the channel
+
 > TO ADD: Flie Transfer
 
 ### group
@@ -55,6 +58,7 @@
  - TODO **delete(cb)** - Deletes the group
  - TODO **copy(dst,cb)** - Copies the group
  - TODO **perms** - Permissions of the Group (perm object)
+
  > TO ADD: Client List
 
 ### channelgroup
@@ -62,9 +66,11 @@
 - TODO **delete(cb)** - Deletes the group
 - TODO **copy(dst,cb)** - Copies the group
 - TODO **perms** - Permissions of the Group (perm object)
+
 > TO ADD: Channel Group List, Channel Group Perm List, Channel Group Client List
 
 ### perm
  - TODO **set(perm[,val,cb])** - Set Permission or revoke it by setting it to null (If no value is specified current value is returned)
  - TODO **perms** - all permissions
+
 > TO ADD: Channel Perm List, Client Perm List
