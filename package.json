@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mkg20001/teamspeak-simple/issues"
   },
-  "homepage": "https://github.com/mkg20001/teamspeak-simple#readme"
+  "homepage": "https://github.com/mkg20001/teamspeak-simple#readme",
+  "dependencies": {
+    "node-teamspeak": "^1.0.10"
+  }
 }
