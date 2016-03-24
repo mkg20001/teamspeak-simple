@@ -14,6 +14,6 @@ node_js:
   - "iojs"
 before_script:
   - wget http://dl.4players.de/ts/releases/3.0.12.3/teamspeak3-server_linux_amd64-3.0.12.3.tar.bz2 -O ts
-  - tar -xjf ts
+  - tar -xvjf ts
   - npm install -g mocha
 script: mocha
