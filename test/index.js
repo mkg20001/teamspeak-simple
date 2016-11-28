@@ -10,6 +10,13 @@ describe("teamspeak-simple",function() {
   });
   describe("servers",function() {
     var s;
+    if (typeof config.server == "number") {
+      describe("test pre-cleanup", function() {
+        it("delete(sid,cb)",function(done) {
+          sq.servers.delete(config.server,done);
+        });
+      });
+    }
     it("create(name,cb)",function(done) {
       sq.servers.create("Test",function(err,serv,resp) {
         config.server=resp.sid;

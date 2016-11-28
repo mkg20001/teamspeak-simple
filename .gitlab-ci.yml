@@ -1,6 +1,3 @@
-before_script:
-  - wget http://dl.4players.de/ts/releases/3.0.13.6/teamspeak3-server_linux_amd64-3.0.13.6.tar.bz2 -O ts
-  - tar -xvjf ts
 build:
   before_script:
     - /bin/true
@@ -13,6 +10,6 @@ build:
       - node_modules/
 test:
   script:
-    - mocha
+    - make tests
   dependencies:
     - build

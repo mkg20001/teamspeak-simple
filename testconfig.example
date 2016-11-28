@@ -1,0 +1,8 @@
+module.exports={
+  host:"localhost",
+  login: {
+    client_login_name: "serveradmin",
+    client_login_password: "###PASSWORD###"
+  },
+  server:null //(optional) enter sid to delete before running the test
+}
