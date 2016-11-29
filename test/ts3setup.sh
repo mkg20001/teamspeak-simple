@@ -14,16 +14,16 @@ if [ -f "$LOCAL_PID_FILE" ]; then
     rm $data/ts3server.sqlitedb
   fi
 fi
-sh $data/ts3server_startscript.sh start 2> ts3.log
+sh $data/ts3server_startscript.sh start &> ts3.log
 tail -f ts3.log --pid=$$ &
 sleep 5s
 
 maindir=$(readlink -f $data/../)
 
-pw=$(cat ts3.log | grep 'password= "[a-zA-Z0-9]*"' -o | grep -o "\"[a-zA-Z0-9]*\"")
+pw=$(cat ts3.log | grep 'password= "[a-zA-Z+0-9]*"' -o | grep -o "\"[a-zA-Z+0-9]*\"")
 
 echo "[setup] got pw: $pw"
 
 cp $maindir/testconfig.example $maindir/testconfig.js
 sed "s/\"###PASSWORD###\"/$pw/g" -i $maindir/testconfig.js
-sed "s/server:null/server:'0'/g" -i $maindir/testconfig.js
+sed "s/server:null/server:1/g" -i $maindir/testconfig.js
