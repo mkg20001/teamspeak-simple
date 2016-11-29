@@ -16,28 +16,28 @@ build:
 test-13.6:
   <<: *test-template
   variables:
-    VER: 13.6
+    VER: "13.6"
 test-13.5:
   <<: *test-template
   variables:
-    VER: 13.5
+    VER: "13.5"
 test-13.4:
   <<: *test-template
   variables:
-    VER: 13.4
+    VER: "13.4"
 test-13.3:
   <<: *test-template
   variables:
-    VER: 13.3
+    VER: "13.3"
 test-13.2:
   <<: *test-template
   variables:
-    VER: 13.2
+    VER: "13.2"
 test-13.1:
   <<: *test-template
   variables:
-    VER: 13.1
+    VER: "13.1"
 test-13.0:
   <<: *test-template
   variables:
-    VER: 13.0
+    VER: "13.0"
