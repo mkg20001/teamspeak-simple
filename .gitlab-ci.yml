@@ -41,3 +41,23 @@ test-13.0:
   <<: *test-template
   variables:
     VER: "13.0"
+test-12.4:
+  <<: *test-template
+  variables:
+    VER: "12.4"
+test-12.3:
+  <<: *test-template
+  variables:
+    VER: "12.3"
+test-12.2:
+  <<: *test-template
+  variables:
+    VER: "12.2"
+test-12.1:
+  <<: *test-template
+  variables:
+    VER: "12.1"
+test-12.0:
+  <<: *test-template
+  variables:
+    VER: "12.0"
