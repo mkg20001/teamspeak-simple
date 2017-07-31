@@ -1,0 +1,24 @@
+{
+  "name": "teamspeak-simple",
+  "version": "0.0.3",
+  "description": "TeamSpeak3 Query made easy",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts3",
+    "teamspeak",
+    "ts",
+    "query",
+    "simple"
+  ],
+  "author": "Maciej Krüger <mkg20001@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "clone": "^2.1.1",
+    "merge-recursive": "0.0.3",
+    "teamspeak-query-client": "^0.1.4"
+  }
+}
