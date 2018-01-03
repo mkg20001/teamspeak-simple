@@ -2,7 +2,7 @@
   "name": "teamspeak-simple",
   "version": "0.0.3",
   "description": "TeamSpeak3 Query made easy",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,15 +16,17 @@
   "author": "Maciej Krüger <mkg20001@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.5.0",
+    "async": "^2.6.0",
     "clone": "^2.1.1",
     "merge-recursive": "0.0.3",
-    "teamspeak-query-client": "^0.1.4"
+    "teamspeak-query-client": "^0.1.5"
   },
   "directories": {
-    "lib": "lib"
+    "lib": "src"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "aegir": "^12.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mkg20001/teamspeak-simple.git"
